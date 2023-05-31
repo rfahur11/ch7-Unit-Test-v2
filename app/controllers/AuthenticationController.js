@@ -1,5 +1,5 @@
 const ApplicationController = require("./ApplicationController");
-const { EmailNotRegisteredError, EmailAlreadyTakenError, InsufficientAccessError, NotFoundError, WrongPasswordError } = require("../errors");
+const { EmailNotRegisteredError, InsufficientAccessError, NotFoundError, WrongPasswordError } = require("../errors");
 const { JWT_SIGNATURE_KEY } = require("../../config/application");
 
 class AuthenticationController extends ApplicationController {
