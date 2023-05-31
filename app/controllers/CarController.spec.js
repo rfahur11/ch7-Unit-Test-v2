@@ -5,18 +5,18 @@ describe("CarController", () => {
   describe("Constructor check", () => {
     it("constructor works", () => {
       const object = new CarController({
-        carModel: "hino",
-        userCarModel: "kuro",
+        carModel: "car",
+        userCarModel: "user",
         dayjs: 1,
       });
-      expect(object.carModel).toBe("hino");
-      expect(object.userCarModel).toBe("kuro");
+      expect(object.carModel).toBe("car");
+      expect(object.userCarModel).toBe("user");
       expect(object.dayjs).toBe(1);
     });
   });
   describe("handleListCar", () => {
     it("should call res.status(200) and res.json with queried list of car instances", async () => {
-      const name = "kuro";
+      const name = "user";
       const price = 5000;
       const size = "small";
       const image = "image.jpg";
@@ -48,7 +48,7 @@ describe("CarController", () => {
   });
   describe("handleGetCar", () => {
     it("should call res.status(200) and res.json with car instance", async () => {
-      const name = "kuro";
+      const name = "user";
       const price = 5000;
       const size = "small";
       const image = "image.jpg";
@@ -80,7 +80,7 @@ describe("CarController", () => {
   });
   describe("handleCreateCar", () => {
     it("should call res.status(201) and res.json with car instance", async () => {
-      const name = "kuro";
+      const name = "user";
       const price = 5000;
       const size = "small";
       const image = "image.jpg";
@@ -113,7 +113,7 @@ describe("CarController", () => {
     });
     it("should call res.status(422) and res.json with car instance", async () => {
       const err = new Error("Something");
-      const name = "kuro";
+      const name = "user";
       const price = 5000;
       const size = "small";
       const image = "image.jpg";
@@ -159,7 +159,7 @@ describe("CarController", () => {
   });
   describe("handleUpdateCar", () => {
     it("should call res.status(200) and res.json with car instance", async () => {
-      const name = "kuro";
+      const name = "user";
       const price = 5000;
       const size = "small";
       const image = "image.jpg";
@@ -202,7 +202,7 @@ describe("CarController", () => {
       expect(mockResponse.json).toHaveBeenCalledWith(mockCar);
     });
     it("should call res.status(422) and res.json with car instance", async () => {
-      const name = "kuro";
+      const name = "user";
       const price = 5000;
       const size = "small";
       const image = "image.jpg";
@@ -244,7 +244,7 @@ describe("CarController", () => {
   });
   describe("handleDeleteCar", () => {
     it("should call res.status(204)", async () => {
-      const name = "kuro";
+      const name = "user";
       const price = 5000;
       const size = "small";
       const image = "image.jpg";

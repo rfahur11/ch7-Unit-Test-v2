@@ -10,4 +10,4 @@ Tugas kalian disini adalah:
 Good luck!
 
 Link deploy ke netlify : <br>
-https://tiny-beijinho-30a62c.netlify.app/
+https://unit-test-ch7.netlify.app/
