@@ -9,5 +9,5 @@ Tugas kalian disini adalah:
 
 Good luck!
 
-Link deploy ke netlify : <br>
+Link netlify : <br>
 https://unit-test-ch7.netlify.app/
